@@ -1,0 +1,64 @@
+.no-data-class {
+    display: flex;
+    margin-top: 20em;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+}
+.delete-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+.delete-dialog {
+  width: 400px;
+  max-width: 90%;
+
+  background: white;
+  color: #222;
+
+  padding: 25px;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.delete-dialog h2 {
+  margin-top: 0;
+}
+
+.delete-dialog p {
+  margin: 20px 0;
+}
+
+.delete-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.delete-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-actions button:first-child {
+  background: #ddd;
+  color: #222;
+}
+
+.delete-actions button:last-child {
+  background: #d32f2f;
+  color: white;
+}

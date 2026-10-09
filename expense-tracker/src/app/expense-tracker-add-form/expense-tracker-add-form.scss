@@ -1,0 +1,68 @@
+.add-form {
+  width: 600px;
+  max-width: 90%;
+  max-height: 70vh;
+
+  padding: 25px;
+  box-sizing: border-box;
+
+  background-color: #1e293b;
+  color: white !important;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 12px;
+
+  /* Scroll */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Form fields */
+.add-form mat-form-field {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* Scrollbar */
+.add-form::-webkit-scrollbar {
+  width: 6px;
+}
+
+.add-form::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.add-form::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+
+  position: sticky;
+  bottom: 0;
+
+  padding: 12px 0 5px;
+
+  background-color: #1e293b;
+  z-index: 10;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .add-form {
+    width: 100%;
+    max-width: 100%;
+    max-height: 70vh;
+    padding: 15px;
+  }
+
+  .form-buttons {
+    gap: 8px;
+  }
+}

@@ -1,0 +1,36 @@
+<mat-toolbar class="expense-header">
+
+    <!-- Left Section -->
+    <div class="header-left">
+
+        <div class="logo-box">
+            <mat-icon>account_balance_wallet</mat-icon>
+        </div>
+
+        <div class="title-section">
+            <h2>My Expense Tracker</h2>
+            <p>Expense Tracker & Budget Planner</p>
+        </div>
+
+    </div>
+
+    <span class="spacer"></span>
+
+    <!-- Right Section -->
+    <div class="header-right">
+
+
+       <button
+  mat-raised-button
+  color="primary"
+  class="add-btn"
+  (click)="addTransaction()">
+
+  <mat-icon>add</mat-icon>
+  Add Transaction
+
+</button>
+
+    </div>
+
+</mat-toolbar>

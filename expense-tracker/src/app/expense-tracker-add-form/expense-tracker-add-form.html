@@ -1,0 +1,105 @@
+<div class="add-form">
+  <h2>Add Transaction</h2>
+  <p>Create or edit a financial record</p>
+
+  <!-- Description -->
+  <mat-form-field appearance="outline">
+    <mat-label>Description / Title</mat-label>
+    <input
+      matInput
+      style="color: white;"
+      type="text"
+      [(ngModel)]="transaction.description"
+      placeholder="e.g. Grocery Store, Freelance Pay">
+  </mat-form-field>
+<br />
+  <!-- Amount -->
+  <mat-form-field appearance="outline">
+    <mat-label>Amount</mat-label>
+    <input
+      matInput
+      style="color: white;"
+      type="number"
+      [(ngModel)]="transaction.amount"
+      placeholder="Enter amount">
+  </mat-form-field>
+<br />
+  <!-- Date -->
+  <mat-form-field appearance="outline">
+    <mat-label>Date</mat-label>
+    <input
+      matInput
+       style="color: white;"
+      [matDatepicker]="picker"
+      [(ngModel)]="transaction.date">
+
+    <mat-datepicker-toggle
+      matIconSuffix
+      [for]="picker">
+    </mat-datepicker-toggle>
+
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+<br />
+  <!-- Category -->
+  <mat-form-field appearance="outline">
+    <mat-label>Category</mat-label>
+
+    <mat-select [(ngModel)]="transaction.category">
+      <mat-option value="">Select Category</mat-option>
+      <mat-option value="Food & Dining">Food & Dining</mat-option>
+      <mat-option value="Travel">Travel</mat-option>
+      <mat-option value="Shopping">Shopping</mat-option>
+      <mat-option value="Bills">Bills</mat-option>
+    </mat-select>
+
+  </mat-form-field>
+<br />
+  <!-- Payment Method -->
+  <mat-form-field appearance="outline">
+    <mat-label>Payment Method</mat-label>
+
+    <mat-select [(ngModel)]="transaction.paymentMethod">
+      <mat-option value="">Select Payment Method</mat-option>
+      <mat-option value="Cash">Cash</mat-option>
+      <mat-option value="Credit Card">Credit Card</mat-option>
+      <mat-option value="Debit Card">Debit Card</mat-option>
+      <mat-option value="UPI">UPI</mat-option>
+    </mat-select>
+
+  </mat-form-field>
+<br />
+  <!-- Notes -->
+  <mat-form-field appearance="outline">
+    <mat-label>Notes (Optional)</mat-label>
+
+    <textarea
+      matInput
+       style="color: white;"
+      [(ngModel)]="transaction.notes"
+      placeholder="Tags, memo or details...">
+    </textarea>
+
+  </mat-form-field>
+
+  <!-- Buttons -->
+  <div class="form-buttons">
+
+    <button
+      mat-stroked-button
+      type="button"
+      (click)="clearForm()">
+      Clear
+    </button>
+
+    <button
+      mat-raised-button
+      color="primary"
+      type="button"
+      (click)="saveTransaction()">
+      Save Transaction
+    </button>
+
+  </div>
+
+</div>

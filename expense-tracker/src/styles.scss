@@ -1,0 +1,193 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color-scheme: light;
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+  margin: 0;
+  height: 100%;
+}
+
+/* ============================= */
+/* Add Transaction Dialog */
+/* ============================= */
+
+.black-dialog {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.black-dialog .mat-mdc-dialog-container {
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.black-dialog .mat-mdc-dialog-surface {
+  background: #1e293b !important;
+  color: white !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+/* Remove white background around dialog */
+.cdk-overlay-pane {
+  background: transparent !important;
+}
+
+.black-dialog {
+  --mdc-dialog-container-color: #1e293b !important;
+}
+
+/* ============================= */
+/* Add Form */
+/* ============================= */
+
+.black-dialog .add-form {
+  width: 600px;
+  max-width: 90vw;
+  max-height: 70vh;
+
+  box-sizing: border-box;
+  padding: 25px;
+
+  background: #1e293b !important;
+  color: white !important;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 12px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+.black-dialog .add-form::-webkit-scrollbar {
+  width: 6px;
+}
+
+.black-dialog .add-form::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.black-dialog .add-form::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+/* Form fields */
+.black-dialog .add-form mat-form-field {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.black-dialog .form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+
+  position: sticky;
+  bottom: 0;
+
+  padding: 12px 0 5px;
+
+  background: #1e293b !important;
+  z-index: 10;
+}
+
+/* ============================= */
+/* Mobile */
+/* ============================= */
+
+@media (max-width: 600px) {
+  .black-dialog .add-form {
+    width: 100%;
+    max-width: 100%;
+    max-height: 70vh;
+    padding: 15px;
+  }
+
+  .black-dialog .form-buttons {
+    gap: 8px;
+  }
+}
+/* ============================= */
+/* White Date Picker */
+/* ============================= */
+
+.mat-datepicker-content {
+  background-color: white !important;
+  color: black !important;
+}
+
+.mat-calendar {
+  background-color: white !important;
+  color: black !important;
+}
+
+.mat-calendar-body-cell-content {
+  color: black !important;
+}
+
+.mat-calendar-table-header {
+  color: #555 !important;
+}
+
+.mat-calendar-body-label {
+  color: #555 !important;
+}
+
+.mat-calendar-body-cell:not(.mat-calendar-body-disabled)
+  .mat-calendar-body-cell-content {
+  color: black !important;
+}
+
+.mat-calendar-body-selected {
+  background-color: #1976d2 !important;
+  color: white !important;
+}
+
+.mat-calendar-body-today:not(.mat-calendar-body-selected) {
+  border-color: #1976d2 !important;
+}
+
+.mat-calendar-previous-button,
+.mat-calendar-next-button,
+.mat-calendar-period-button {
+  color: black !important;
+}
+/* ============================= */
+/* White Select Dropdown */
+/* ============================= */
+
+.mat-mdc-select-panel {
+  background-color: white !important;
+}
+
+.mat-mdc-option {
+  background-color: white !important;
+  color: black !important;
+}
+
+.mat-mdc-option:hover {
+  background-color: #f2f2f2 !important;
+}
+
+.mat-mdc-option.mdc-list-item--selected {
+  background-color: #e8e8e8 !important;
+  color: black !important;
+}
+
+.mat-mdc-select-value {
+  color: black !important;
+}

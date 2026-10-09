@@ -1,0 +1,72 @@
+.expense-header {
+  background-color: #1e293b;
+  color: white;
+
+  display: flex;
+  align-items: center;
+
+  padding: 12px 20px;
+  min-height: 70px;
+  box-sizing: border-box;
+}
+
+/* Left side - Logo + Title */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-right: 12px;
+}
+
+.logo-box mat-icon {
+  font-size: 36px;
+  width: 36px;
+  height: 36px;
+}
+
+/* Title */
+.title-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-section h2 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.title-section p {
+  margin: 4px 0 0 0;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+/* Space between left and right */
+.spacer {
+  flex: 1;
+}
+
+/* Right side buttons */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-right button {
+  white-space: nowrap;
+}
+
+/* Add Transaction button */
+.add-btn {
+  margin-left: 5px;
+}
